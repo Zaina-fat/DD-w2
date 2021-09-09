@@ -1,0 +1,186 @@
+:root
+{
+    --card1color:rgb(80, 30, 216);
+    --card2color:rgb(26, 228, 26);
+    --card3color:rgb(52, 52, 253);
+    --card4color:rgb(236, 160, 19);
+}
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.wrapper
+{
+    display: flex;
+    position: relative;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'roboto' , 'sans-serif';
+}
+.wrapper .SIDEBAR
+{
+    position: fixed;
+    height: 100%;
+    width:200px;
+    
+    background:#cbdcff ;
+    padding:30px 40px;
+}
+.wrapper .SIDEBAR h2{
+    color:#000067;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Glory', sans-serif;
+    
+    
+} 
+.wrapper .SIDEBAR ul li
+{
+padding: 15px;
+border-bottom: 1px solid rgba(0,0,0,0.05);
+border-top: 1px solid rgba(255,255,255,0.05);
+}
+.wrapper .SIDEBAR ul
+{
+    list-style-type: none;
+}
+.wrapper .SIDEBAR ul li:hover
+{
+    background: #fff;
+}
+.wrapper .SIDEBAR ul li a
+{
+color:#000067;
+text-decoration: none;
+}
+.wrapper .SIDEBAR ul li:hover a
+{
+    color:rgb(255, 28, 28);
+}
+.wrapper .main-content
+{
+  width:100%;
+  margin-left: 200px;
+    
+}
+.wrapper .main-content .header
+{
+    padding :20px;
+    background: #fff;
+    color:#717171;
+    border-bottom: 1px solid #e0e4e8;
+
+} 
+.cards
+{
+    margin: 50px;
+    padding:10px ;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    font-family: 'roboto', 'sans-serif';
+    align-items: center;
+}
+.card img
+{
+    height:20px;
+    width:20px;
+    margin: 10px;
+}
+.card h3 
+{
+font-family:'Roboto', sans-serif;
+
+width:fit-content;
+padding: 3px 25px;
+margin: 15px;
+border-radius: 8px;
+
+}
+.card
+{
+background: #fff;
+
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+border-bottom-left-radius: 15px;
+border-bottom-right-radius: 15px;
+}
+.card-content hr
+{
+    height: 7px;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.card-content p{
+    padding: 10px;
+    margin: 5px;
+
+}
+.card-info
+{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #717171S;
+}
+.card-1 > .card-content hr
+{
+    background-color:var(--card1color) ;
+}
+.card-2 > .card-content hr
+{
+    background-color:var(--card2color) ;
+}
+.card-3 > .card-content hr
+{
+    background-color:var(--card3color) ;
+}
+.card-4 > .card-content hr
+{
+    background-color:var(--card4color) ;
+}
+.card-1  h3
+{
+    background-color:rgb(205, 160, 247);
+    color:var(--card1color);
+}
+.card-2  h3
+{
+    background-color:rgb(178, 248, 178);
+    color:var(--card2color);
+}
+.card-3  h3
+{
+    background-color:rgb(139, 176, 255);
+    color:var(--card3color);
+}
+.card-4  h3
+{
+    background-color:rgb(255, 216, 143);
+    color:var(--card4color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
